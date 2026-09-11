@@ -1,0 +1,22 @@
+{
+    "bddIgnore": [
+        "formula_data",
+        "anim_tag_lookat_priority_data",
+        "anim_state_lookat_priority_data",
+        "ecs_editor_export_chem_material_data",
+        "state_conflict_data",
+        "skill_state_conflict_data",
+        "puppet_state_conflict_data",
+        "scene_block_info",
+        "stamina_config_data",
+        "CharacterStateConstImp",
+        "trigger_map_data",
+        "custom_default_register_map"
+    ],
+    "bddIgnoreFolders": [
+        "BehaviacData.",
+        "AICtrData.",
+        "GroupBehaviour.",
+        "Input."
+    ]
+}

@@ -1,0 +1,61 @@
+syntax = "proto2";
+import "common.proto";
+package phonest.proto;
+option cc_generic_services = false;
+// 注册请求
+message AgentRegisterReq{
+    required string ip = 1;
+    required int32 port = 2;
+    required int32 clusterId = 3;
+    required string processName = 4;
+    optional string pod = 5;
+    optional string namespace = 6;
+    optional string node = 7;
+    optional bytes labels = 8;  // custom labels, map packed data
+} 
+// 消息数据
+message AgentMessageReq{
+    required bytes message = 1;
+}
+
+//心跳包 
+message HeartbeatReq {
+    optional int64 time = 1;
+}
+
+//心跳回包
+message HeartbeatResp{
+    optional int64 time = 1;
+}
+
+//关闭请求
+message ClientUnregisterReq{
+
+}
+
+
+// Client2Agent
+service Client2AgentService{
+    rpc ClientRegisterToAgent(AgentRegisterReq) returns(Void);
+    rpc AgentMessage(AgentMessageReq) returns (Void);
+    rpc HeartbeatCallback(HeartbeatResp) returns (Void);
+    rpc ClientUnregisterToAgent(ClientUnregisterReq) returns(Void);
+}
+
+message AgentRegisterSucc{
+    optional string ip = 1;
+    optional int32 port = 2;
+    optional int32 clusterId = 3;
+    optional string processName = 4;
+}
+
+message ClientUnregisterResp{
+
+}
+
+// Agent2Client
+service Agent2ClientService{
+    rpc RegisterToAgentSucc(AgentRegisterSucc) returns(Void);
+    rpc Heartbeat(HeartbeatReq) returns(Void);
+    rpc ClientUnregisterCallback(ClientUnregisterResp) returns(Void);
+}

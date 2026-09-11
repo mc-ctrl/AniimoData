@@ -1,0 +1,218 @@
+syntax = "proto2";
+
+import "common.proto";
+
+package phonest.proto;
+
+option cc_generic_services = false;
+
+// 出于优化Gate转发效率的考量，某些Message会拼凑多个字段，对通信的其中一方来说，可能存在不必要的字段
+// 我们约定，当出现这种拼凑字段的Message时，会在注释中用以下方法说明字段的使用范围：
+// All ：通信两端都会使用
+// ClientOnly ：客户端会使用
+// ServerOnly ：服务器会使用
+
+message DBStatusInfo {
+	enum DBType{
+		Mongo = 0;
+		Redis = 1;
+		ClusterIdNotMatch = 2;
+	}
+
+	enum DBStatusType {
+		Active = 0;
+		Inactive = 1;
+	}
+	required DBType dbtype = 1;
+	required DBStatusType status = 2;
+}
+
+message FindDocReq {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required string db = 2;	        // db name
+	required string collection = 3;  // collection name
+	required bytes query = 4;       // msgpack编码的查询条件
+	optional bytes projection = 5;  // msgpack编码的返回的字段列表
+	optional int64 limit = 6 [default = 1]; // 返回的结果数量上限
+	optional int64 skip = 7;        // 忽略的结果数量
+	optional bytes sort = 8;        // 对返回的结果根据sort指定的字段进行排序
+	optional bytes hint = 9;        // 指明使用的索引
+	optional int32 readPreference = 10 [default = 1]; // replica set开启的情况下，选择查询节点的方式, 默认从Primary节点读取
+	optional bytes strand = 11;     // 保序的键值
+	optional bool lazyload = 12;    // 是否延迟反序列化
+	optional bytes context = 13;     // Opentracing使用 
+}
+
+message UpdateDocReq {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required string db = 2;	        // db name
+	required string collection = 3; // collection name
+	required bytes query = 4;       // msgpack编码的查询条件
+	required bytes doc = 5;         // msgpack编码的更新的文档
+	optional bool upsert = 6;       // 如果目标文档不存在，是否插入
+	optional bool multi = 7;        // 是否更新多个匹配的文档
+	optional bytes arrayFilters = 8;// 指明使用的arrayFilters
+	optional bytes hint = 9;        // 指明使用的索引
+	optional bool wMajority = 10;   // 写操作是否需要同步给大多数节点后再返回
+	optional bytes strand = 11;     // 保序的键值
+	optional bytes context = 12;     // Opentracing使用 
+}
+
+message DeleteDocReq {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required string db = 2;	        // db name
+	required string collection = 3; // collection name
+	required bytes query = 4;       // msgpack编码的查询条件
+	optional bool multi = 5;        // 是否删除多个匹配的文档
+	optional bool wMajority = 6;   // 写操作是否需要同步给大多数节点后再返回
+	optional bytes strand = 7;     // 保序的键值
+	optional bytes context = 8;     // Opentracing使用 
+}
+
+message InsertDocReq {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required string db = 2;	        // db name
+	required string collection = 3;  // collection name
+	required bytes doc = 4;         // msgpack编码的插入的文档
+	optional bool wMajority = 5;   // 写操作是否需要同步给大多数节点后再返回
+	optional bytes strand = 6;      // 保序的键值
+	optional bytes context = 7;     // Opentracing使用 
+}
+
+message FindAndModifyDocReq {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required string db = 2;	        // db name
+	required string collection = 3;  // collection name
+	required bytes query = 4;       // msgpack编码的查询条件
+	optional bytes projection = 5;  // msgpack编码的返回的字段列表
+	optional bytes update = 6;      // msgpack编码的更新文档
+	optional bool upsert = 7;       // 如果目标文档不存在，是否插入
+	optional bool retNew = 8;       // 返回更新后的文档还是更新前的文档
+	optional bool remove = 9;       // 是否删除查询到的文档
+	optional bool replace = 10;     // 是否替换查询到的文档
+	optional bytes sort = 11;       // 按照sort指定的字段进行排序，选择排序后的第一个文档
+	optional bytes arrayFilters = 12;// 指明使用的arrayFilters
+	optional bool wMajority = 13;   // 写操作是否需要同步给大多数节点后再返回
+	optional bytes strand = 14;     // 保序的键值
+	optional bool lazyload = 15;    // 是否延迟反序列化
+	optional bytes context = 16;     // Opentracing使用 
+}	
+
+message CountDocReq {
+	required uint32 callbackId = 1;  // callback的唯一ID
+	required string db = 2;	         // db name
+	required string collection = 3;  // collection name
+	required bytes query = 4;        // msgpack编码的查询条件
+	optional int64 limit = 5;        // 返回的结果数量上限
+	optional int64 skip = 6;         // 忽略的结果数量
+	optional bytes hint = 7;         // 指明使用的索引
+	optional bytes strand = 8;       // 保序的键值
+	optional bytes context = 9;     // Opentracing使用 
+}
+
+message RedisCommandReq {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required bytes args = 2; // cmd args	
+	optional bytes context = 3;     // Opentracing使用 
+}
+
+message RedisPipelineReq {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required bytes args = 2; //cmd args array
+	optional bytes context = 3;     // Opentracing使用 
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+message FindDocReply {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required bool status = 2;       // find操作是否成功
+	optional bool lazyload = 3;     // 延迟反序列化
+	required bytes docs = 4;        // msgpack编码的doc列表
+	optional bytes errmsg = 5;      // 错误消息
+	optional bytes context = 6;     // Opentracing使用
+}
+
+message UpdateDocReply {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required bool status = 2;       // update操作是否成功
+	required bytes result = 3;      // update操作的结果
+	optional bytes errmsg = 4;      // 错误消息
+	optional bytes context = 5;     // Opentracing使用
+}
+
+message DeleteDocReply {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required bool status = 2;       // delete操作是否成功
+	required int64 delCount = 3;    // 被删除的文档数量
+	optional bytes errmsg = 4;      // 错误消息
+	optional bytes context = 5;     // Opentracing使用
+}
+
+message InsertDocReply {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required bool status = 2;       // insert操作是否成功
+	required bytes insertId = 3;    // 插入成功后返回的_id
+	optional bytes errmsg = 4;      // 错误消息
+	optional bytes context = 5;     // Opentracing使用
+}
+
+message FindAndModifyDocReply {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required bool status = 2;       // insert操作是否成功
+	optional bool lazyload = 3;     // 延迟反序列化
+	optional bytes doc = 4;         // 执行成功后返回的文档
+	optional bytes errmsg = 5;      // 错误消息
+	optional bytes context = 6;     // Opentracing使用
+}
+
+message CountDocReply {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required bool status = 2;       // insert操作是否成功
+	required int64 count = 3;      // 返回的结果数量
+	optional bytes errmsg = 4;      // 错误消息
+	optional bytes context = 5;     // Opentracing使用
+}
+
+message RedisCommandReply {
+	required uint32 callbackId = 1; //callback的唯一ID
+	required bool status = 2; // 操作是否成功
+	optional bytes value = 3; // 操作返回
+	optional bytes error = 4; // 错误信息
+	optional bytes context = 5;     // Opentracing使用
+}
+
+message RedisPipelineReply {
+	required uint32 callbackId = 1; //callback的唯一ID
+	required bool status = 2; // 操作是否成功
+	optional bytes value = 3; // 操作返回 
+	optional bytes error = 4; // 错误信息
+	optional bytes context = 5;     // Opentracing使用
+}
+
+
+// Game2DBManager
+service IGame2DBManagerService {
+	rpc regGameServer(ServerInfo) returns (Void);
+	rpc dbFindDoc(FindDocReq) returns (Void);
+	rpc dbUpdateDoc(UpdateDocReq) returns (Void);
+	rpc dbDeleteDoc(DeleteDocReq) returns (Void);
+	rpc dbInsertDoc(InsertDocReq) returns (Void);
+	rpc dbFindAndModifyDoc(InsertDocReq) returns (Void);
+	rpc dbCountDoc(InsertDocReq) returns (Void);
+	rpc redisCmdRequest(RedisCommandReq) returns (Void);
+	rpc redisPipelineRequest(RedisPipelineReq) returns (Void);
+}
+
+// DBManager2Game
+service IDBManager2GameService {
+	rpc syncDBStatus(DBStatusInfo) returns (Void);
+	rpc dbFindDocReply(FindDocReply) returns (Void); 
+	rpc dbUpdateDocReply(UpdateDocReply) returns (Void); 
+	rpc dbDeleteDocReply(DeleteDocReply) returns (Void); 
+	rpc dbInsertDocReply(InsertDocReply) returns (Void); 
+	rpc dbFindAndModifyDocReply(FindAndModifyDocReq) returns (Void);
+	rpc dbCountDocReply(CountDocReq) returns (Void);
+	rpc redisCmdReply(RedisCommandReply) returns (Void);
+	rpc redisPipelineReply(RedisPipelineReply) returns (Void);
+} 

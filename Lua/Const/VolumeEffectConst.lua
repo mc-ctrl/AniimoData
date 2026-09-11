@@ -1,0 +1,14 @@
+--- BLOCK #0 1-2, warpins: 1 ---
+slot0 = {
+	FOG_CLOUD_EFFECT = 6,
+	DIALOGUE_FOREGROUND_BLUR = 4,
+	MAGNESIS_EFFECT = 3,
+	SCREEN_DARK_EFFECT = 2,
+	GHOST_EYE_EFFECT = 1
+}
+
+return slot0
+--- END OF BLOCK #0 ---
+
+
+

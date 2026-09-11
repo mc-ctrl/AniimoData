@@ -1,0 +1,180 @@
+--- BLOCK #0 1-14, warpins: 1 ---
+slot0 = require
+slot2 = "Core.Framework.Class"
+slot0 = slot0(slot2)
+slot1 = require
+slot3 = "Guis.UIView"
+slot1 = slot1(slot3)
+slot2 = slot0.LightClass
+slot4 = "InfoPlayerMainView"
+slot5 = slot1
+slot2 = slot2(slot4, slot5)
+
+slot3 = function(slot0)
+	--- BLOCK #0 1-152, warpins: 1 ---
+	slot1 = slot0.transform
+	slot3 = slot1
+	slot1 = slot1.GetComponent
+	slot4 = "ObjectReference"
+	slot1 = slot1(slot3, slot4)
+	slot0.objectReference = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "btnClose"
+	slot1 = slot1(slot3, slot4)
+	slot0.btnClose = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "panelInfoWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "panelEditWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelEditWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "rootUComponent"
+	slot1 = slot1(slot3, slot4)
+	slot0.rootUComponent = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "btnAdd"
+	slot1 = slot1(slot3, slot4)
+	slot0.btnAdd = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "btnEdit"
+	slot1 = slot1(slot3, slot4)
+	slot0.btnEdit = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "btnChat"
+	slot1 = slot1(slot3, slot4)
+	slot0.btnChat = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "topTitleUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.topTitleUWidget = slot1
+	slot1 = slot0.panelInfoWidget
+	slot1 = slot1.transform
+	slot3 = slot1
+	slot1 = slot1.GetComponent
+	slot4 = "ObjectReference"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoObjectReference = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "headButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoHeadButton = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "levelText"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoLevelText = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "playerNameText"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoPlayerNameText = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "emblemImage"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoEmblemImage = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "likabilityImage"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoLikabilityImage = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "copyButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoCopyButton = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "uidText"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoUidText = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "classNumText"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoClassNumText = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "classInfoText"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoClassInfoText = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "playerSignText"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoPlayerSignText = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "collectList"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoCollectList = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "designationText"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelDesignationText = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "panelInfoTitleBackgroundUImage"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoTitleBackgroundUImage = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "panelInfoTitleUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoTitleUSDFText = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "panelInfoBadgeUList"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelInfoBadgeUList = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.findObjects = slot3
+
+return slot2
+--- END OF BLOCK #0 ---
+
+
+

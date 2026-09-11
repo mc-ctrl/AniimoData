@@ -1,0 +1,198 @@
+--- BLOCK #0 1-27, warpins: 1 ---
+slot0 = require
+slot2 = "Core.Log.LoggerManager"
+slot0 = slot0(slot2)
+slot1 = require
+slot3 = "Core.Log.LoggerConst"
+slot1 = slot1(slot3)
+slot2 = require
+slot4 = "Core.Framework.Class"
+slot2 = slot2(slot4)
+slot3 = slot0.getLogger
+slot5 = "RpcHandler"
+slot3 = slot3(slot5)
+slot4 = slot2.Class
+slot6 = "RpcHandler"
+slot4 = slot4(slot6)
+
+slot5 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = nil
+	slot0.cObj = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot4.ctor = slot5
+
+slot5 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot0.cObj = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot4.setCobj = slot5
+
+slot5 = function(slot0, slot1, ...)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.cObj
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-10, warpins: 1 ---
+	slot2 = slot0.cObj
+	slot4 = slot2
+	slot2 = slot2.dispatchRpc
+	slot5 = slot1
+	MULTRES = ...
+
+	slot2(slot4, slot5, MULTRES)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 11-17, warpins: 1 ---
+	slot2 = LoggerManager
+	slot2 = slot2.checkLogger
+	slot4 = LoggerConst
+	slot4 = slot4.WARN
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-23, warpins: 1 ---
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.warn
+	slot5 = "dispatchRpc %s, but rpcHandler is invalid"
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 24-24, warpins: 3 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot4.dispatchRpc = slot5
+
+slot5 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = assert
+	slot3 = slot0.cObj
+	--- END OF BLOCK #0 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 7-7, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-11, warpins: 2 ---
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.cObj = slot1
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot4.onSessionDisconnected = slot5
+
+slot5 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.ERROR
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-14, warpins: 1 ---
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.error
+	slot6 = "onProtoExceedLimit size: %d, context: %s"
+	slot7 = slot1
+	slot8 = slot2
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 15-15, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot4.onProtoExceedLimit = slot5
+
+return slot4
+--- END OF BLOCK #0 ---
+
+
+

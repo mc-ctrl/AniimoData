@@ -1,0 +1,155 @@
+--- BLOCK #0 1-20, warpins: 1 ---
+slot0 = require
+slot2 = "Core.Log.LoggerManager"
+slot0 = slot0(slot2)
+slot0 = slot0.getLogger
+slot2 = "InteractSecondView"
+slot0 = slot0(slot2)
+slot1 = require
+slot3 = "Core.Framework.Class"
+slot1 = slot1(slot3)
+slot2 = require
+slot4 = "Guis.UIView"
+slot2 = slot2(slot4)
+slot3 = slot1.LightClass
+slot5 = "HomelandFacilityInfoView"
+slot6 = slot2
+slot3 = slot3(slot5, slot6)
+
+slot4 = function(slot0)
+	--- BLOCK #0 1-121, warpins: 1 ---
+	slot1 = slot0.transform
+	slot3 = slot1
+	slot1 = slot1.GetComponent
+	slot4 = "ObjectReference"
+	slot1 = slot1(slot3, slot4)
+	slot0.objectReference = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "titleText"
+	slot1 = slot1(slot3, slot4)
+	slot0.titleText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "closeBtn"
+	slot1 = slot1(slot3, slot4)
+	slot0.closeBtn = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "listPet"
+	slot1 = slot1(slot3, slot4)
+	slot0.listPet = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "workInfo"
+	slot1 = slot1(slot3, slot4)
+	slot0.workInfo = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "levelUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.levelUWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "levelText"
+	slot1 = slot1(slot3, slot4)
+	slot0.levelText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "facilityIcon"
+	slot1 = slot1(slot3, slot4)
+	slot0.facilityIcon = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "petPanelUComponent"
+	slot1 = slot1(slot3, slot4)
+	slot0.petPanelUComponent = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "petPanelTextUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.petPanelTextUSDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "recommendText"
+	slot1 = slot1(slot3, slot4)
+	slot0.recommendText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "accessList"
+	slot1 = slot1(slot3, slot4)
+	slot0.accessList = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "recommendUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.recommendUWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "itemInfo02UWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.itemInfo02UWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "itemInfo01UWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.itemInfo01UWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "itemInfo03UWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.itemInfo03UWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "homeAbilityUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.homeAbilityUWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "homeAbilityItem"
+	slot1 = slot1(slot3, slot4)
+	slot0.homeAbilityItem = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "detailInfoPopupRectRectTransform"
+	slot1 = slot1(slot3, slot4)
+	slot0.detailInfoPopupRectRectTransform = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "contentUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.contentUWidget = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3.findObjects = slot4
+
+return slot3
+--- END OF BLOCK #0 ---
+
+
+

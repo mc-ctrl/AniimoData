@@ -1,0 +1,81 @@
+{
+    "enableEncrypt": true,
+    "pubKeyData": "-----BEGIN RSA PUBLIC KEY-----\nMIIBCgKCAQEAr/9IP4Dh69zOplFeq9wFCkXPXM/YlOhT+TuBGk1s8GnLmkSPtKvH\ngjXwlVBQir7JUT3nIQOSZWVHsL8IrzM5JPWt+OQ4PG6yjqDkngHp8cvgw/BNa0F0\n9KI4mit5459kfYXhwrcpliWCKXImET1qIijCQGKgRr8VWK7yez3eF2GEXk2n2ylm\nG27yK2TNlkTjDbkvjeuPzYoWh14gp1GeCJ1L7FDwapXinE/I5UfWnZCqlwXwXd6c\nMcKEk1b9M2+8tS6c4Y/n+8Tq7iBzPlzmS5oQmoUlwfEzT6SSlyQsrkradpHLHZ0q\nVoj6d/oHBZD3Uj9sRTycy72WeW4tTWuqDQIDAQAB\n-----END RSA PUBLIC KEY-----",
+    "enableMsEncrypt": true,
+    "msPubKeyData": "-----BEGIN RSA PUBLIC KEY-----\nMIIBCgKCAQEAr/9IP4Dh69zOplFeq9wFCkXPXM/YlOhT+TuBGk1s8GnLmkSPtKvH\ngjXwlVBQir7JUT3nIQOSZWVHsL8IrzM5JPWt+OQ4PG6yjqDkngHp8cvgw/BNa0F0\n9KI4mit5459kfYXhwrcpliWCKXImET1qIijCQGKgRr8VWK7yez3eF2GEXk2n2ylm\nG27yK2TNlkTjDbkvjeuPzYoWh14gp1GeCJ1L7FDwapXinE/I5UfWnZCqlwXwXd6c\nMcKEk1b9M2+8tS6c4Y/n+8Tq7iBzPlzmS5oQmoUlwfEzT6SSlyQsrkradpHLHZ0q\nVoj6d/oHBZD3Uj9sRTycy72WeW4tTWuqDQIDAQAB\n-----END RSA PUBLIC KEY-----",
+    "enableOnlineServerList": true,
+    "forceServerGroup": "",
+    "forceServerName": "",
+    "forceMsGate": "",
+    "serverGroupData": {
+        "ver001": {
+            "localDirData": [
+                {
+                    "ClusterId": 0,
+                    "ClusterName": "LOCAL"
+                },
+                {
+                    "ClusterId": 100,
+                    "ClusterName": "VER001"
+                }
+            ],
+            "msGateAddrList": ["10.8.45.77:26000"]
+        },
+        "feature": {
+            "localDirData": [
+                {
+                    "ClusterId": 0,
+                    "ClusterName": "LOCAL"
+                },
+                {
+                    "ClusterId": 100,
+                    "ClusterName": "FEATURE"
+                }
+            ],
+            "msGateAddrList": ["10.8.45.98:26000"]
+        },
+        "release": {
+            "localDirData": [
+                {
+                    "ClusterId": 0,
+                    "ClusterName": "LOCAL"
+                },
+                {
+                    "ClusterId": 100,
+                    "ClusterName": "RELEASE"
+                }
+            ],
+            "msGateAddrList": ["10.8.45.64:26000"]
+        },
+        "CBT3-CN": {
+            "localDirData": [
+                {
+                    "ClusterId": 100,
+                    "ClusterName": "Aniimo-CN"
+                }
+            ],
+            "msGateAddrList": ["worldx-tx-cn-prod-ms-gate.kingsgroup.cn:10000"]
+        },
+        "CBT3-OS": {
+            "enableDefaultServerDetect": true,
+            "localDirData": [
+                {
+                    "ClusterId":100,
+                    "ClusterName":"Aniimo-NA",
+                    "msGateAddrList":["worldx-us-prod-ms-gate.kingsgroupgames.com:10000"]
+                },
+                {
+                    "ClusterId": 100,
+                    "ClusterName": "Aniimo-EU",
+                    "msGateAddrList":["worldx-eu-prod-ms-gate.kingsgroupgames.com:10000"]
+                },
+                {
+                    "ClusterId": 100,
+                    "ClusterName": "Aniimo-AP",
+                    "msGateAddrList":["worldx-ap-prod-ms-gate.kingsgroupgames.com:10000"]
+                }
+            ],
+            "msGateAddrList": ["worldx-us-prod-ms-gate.kingsgroupgames.com:10000"]
+        }
+    }
+}

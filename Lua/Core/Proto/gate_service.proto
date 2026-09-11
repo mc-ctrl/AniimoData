@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "common.proto";
+import "common_service.proto";
+
+package phonest.proto;
+
+service Gate2MicroService {
+	rpc regGateServer(GateInfo) returns(Void);                     // Gate向Service注册 deprecated
+    rpc MicroServiceRequest (MsRequest) returns (Void);
+    rpc MicroServiceResponse (MsResponse) returns (Void);
+	rpc RegServiceAck(MsRegistrationAck) returns (Void);
+	rpc DeregServiceAck(MsDeregistrationAck) returns (Void);
+}
+
+service MicroService2Gate {
+   	rpc MicroServiceResponse(MsResponse) returns (Void);
+	rpc MicroServicePush(MsPush) returns (Void);
+	rpc RegService(MsRegistration) returns (Void);
+	rpc DeregService(MsDeregistration) returns (Void);
+}

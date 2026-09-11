@@ -1,0 +1,97 @@
+--- BLOCK #0 1-48, warpins: 1 ---
+slot0 = require
+slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
+slot0 = slot0(slot2)
+slot1 = require
+slot3 = "Common.AI.Behaviac.Enums"
+slot1 = slot1(slot3)
+slot2 = {}
+slot3 = {
+	useForRoute = false,
+	name = "ParmonBehaviorTree/SubTree/PBT_Noop_Failure",
+	agenttype = "CombatAgent",
+	version = 10
+}
+slot4 = {}
+slot3.properties = slot4
+slot4 = {}
+slot5 = {
+	name = "CurrentEP",
+	type = "float",
+	value = "0",
+	const = 0
+}
+slot4[1] = slot5
+slot5 = {
+	name = "maxSkillDist",
+	type = "float",
+	value = "0",
+	const = 0
+}
+slot4[2] = slot5
+slot5 = {
+	name = "skillStopDist",
+	type = "float",
+	value = "0",
+	const = 0
+}
+slot4[3] = slot5
+slot5 = {
+	name = "goBackDist",
+	type = "float",
+	value = "0",
+	const = 0
+}
+slot4[4] = slot5
+slot5 = {
+	name = "CurrentBoxDistToTarget",
+	type = "float",
+	value = "0",
+	const = 0
+}
+slot4[5] = slot5
+slot5 = {
+	name = "tSkillUsed",
+	type = "int",
+	value = "0",
+	const = 0
+}
+slot4[6] = slot5
+slot3.pars = slot4
+slot4 = {}
+slot3.attachments = slot4
+slot4 = {
+	id = "3",
+	class = "DecoratorAlwaysFailure"
+}
+slot5 = {}
+slot6 = {
+	DecorateWhenChildEnds = "false"
+}
+slot5[1] = slot6
+slot4.properties = slot5
+slot5 = {}
+slot4.attachments = slot5
+slot5 = {}
+slot6 = {}
+slot7 = {
+	id = "1",
+	class = "Noop"
+}
+slot8 = {}
+slot7.properties = slot8
+slot8 = {}
+slot7.attachments = slot8
+slot8 = {}
+slot7.children = slot8
+slot6.node = slot7
+slot5[1] = slot6
+slot4.children = slot5
+slot3.node = slot4
+slot2.behavior = slot3
+
+return slot2
+--- END OF BLOCK #0 ---
+
+
+

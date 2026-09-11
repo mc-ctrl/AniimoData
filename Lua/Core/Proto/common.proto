@@ -1,0 +1,369 @@
+syntax = "proto2";
+
+package phonest.proto;
+
+option cc_generic_services = false;
+
+// 出于优化Gate转发效率的考量，某些Message会拼凑多个字段，对通信的其中一方来说，可能存在不必要的字段
+// 我们约定，当出现这种拼凑字段的Message时，会在注释中用以下方法说明字段的使用范围：
+// All ：通信两端都会使用
+// ClientOnly ：客户端会使用
+// ServerOnly ：服务器会使用
+
+message Void {
+	
+}
+
+message EntityMailbox{
+	required bytes entity_id 	= 1;	// Entity的唯一标识
+	required string server_name	= 2;	// 服务器唯一名字、id、address
+	optional int32 cluster_id 	= 3;	// 集群编号，用于跨服
+	optional bytes extra 		= 4;    // 扩展信息
+}
+
+message ServerInfo {
+	optional string server_name = 1;
+	optional int32 clusterId = 2;
+}
+
+message GateInfo {
+	required bytes gateId = 1;
+	required bytes sessionId = 2; 	// Client连接标识
+	required bytes ip = 3;
+	required bytes publicIp = 4;
+	required int32 port = 5;
+	required int32 publicPort = 6;
+	required int32 clusterId = 7;
+}
+
+message ClientInfo {
+	optional bytes  ip = 1;         // Client IP
+	optional int32  port = 2;       // Client Port
+	required bytes  sessionId = 3; 	// Client连接标识
+	optional bytes  gateId = 4;		// Client连接的gate标识
+}
+
+// ChannelEntity指拥有通信权的Entity，如Account、Avatar等
+message ChannelEntityInfo {
+	optional bytes type = 1;        // --All-- Entity类型
+	optional bytes info = 2; 	    // --All-- Entity具体的信息
+	optional bytes entityId = 3;    // --All-- Entity的唯一标识
+	optional bool lazyload = 4;     // --All-- 是否延迟反序列化
+	optional int64 createMode = 5 [default = 0]; // --All-- 创建的模式
+	optional bytes sessionId = 6; 	// --ServerOnly-- Entity对应的client信息
+}
+
+// ClientEntity指普通的没有通信权的Entity，如Monster等
+message ClientEntityInfo {
+	optional bytes type = 1;        // --All-- Entity类型
+	optional bytes info = 2; 	    // --All-- Entity具体的信息
+	optional bytes entityId = 3;    // --All-- Entity的唯一标识
+	optional bool lazyload = 4;     // --All-- 是否延迟反序列化
+	optional bytes sessionId = 5; 	// --ServerOnly-- Entity对应的client信息
+}
+
+message RecoverChannelEntityInfo {
+	required bytes entityId = 1;    // --All-- Entity的唯一标识
+	required int64 channelId = 2;   // --All-- CSChannel的id
+	optional bytes sessionId = 3; 	// --ServerOnly-- Entity对应的client信息
+}
+
+message BindSoulInfo {
+	required bytes soulMailbox = 1; // --All-- Soul的mailbox信息
+	required bytes auth = 2;        // --All-- 绑定Soul时的验证信息
+	required bytes gates = 3;       // --ALL-- 指定连接的Gate列表，msgpack序列化
+	optional bytes sessionId = 4;   // --ServerOnly-- Client连接标识
+}
+
+message UnbindSoulInfo {
+	optional bytes sessionId = 1;   // --ServerOnly-- Client连接标识
+}
+
+message BindAvatarInfo {
+	required bytes avtMailbox = 1;   // --All-- Avatar的mailbox信息
+	required bytes auth = 2;         // --All-- 绑定Avatar时的验证信息
+	required int32 clusterId = 3;    // --All-- Avatar所在的Cluster的编号
+	optional bytes onlineInfo = 4;   // --All-- 玩家的在线信息，包括区服、角色信息等
+	optional bytes sessionId = 5;    // --ServerOnly-- Client连接标识
+}
+
+message BindAccountInfo {
+	required bytes actMailbox = 1;   // --All-- Account的mailbox信息
+	required bytes auth = 2;         // --All-- 绑定Account时的验证信息
+	required int32 clusterId = 3;    // --All-- Avatar所在的Cluster的编号
+	optional bytes onlineInfo = 4;   // --All-- 玩家的在线信息，包括区服、角色信息等
+	optional bytes sessionId = 5;    // --ServerOnly-- Client连接标识
+}
+
+
+
+// Client请求连接Game
+message ConnectServerReq {
+	enum ReqType {
+		NewConnection = 0;	// 新登录
+		ReConnection = 1;	// 断线重连
+		BindSoul = 2;       // 双链接绑定Soul
+		BindAvatar = 3;     // 断线重连或者顶号时绑定Avatar
+		BindAccount = 4;    // 断线重连或者顶号时绑定Account
+		ReBindSoul = 5;     // 断线重连绑定Soul
+	}
+	required ReqType type = 1;           // --All-- 此次连接请求的类型
+	optional bytes deviceId = 2;         // --ClientOnly-- 设备 id, 用于gate选择game时的hash, 以及对该设备下多次连接的网络追踪
+	optional bytes clientInfo = 3;       // --ServerOnly-- Gate端构造的客户端信息
+	optional bytes auth = 4;             // --All-- 认证信息
+	optional bytes entityInfo = 5;       // --All-- Soul或者Avatar或者Account的mailbox信息或者entityId(在gate上解析mailbox并转换成entityId)
+    optional bytes version = 6;          // --ALL-- 版本信息，用于开发时校验前后端版本是否一致
+	optional uint32 lastClientRpcSeqId = 7; // --ClientOnly-- Client已成功处理的最后一条S2C EntityMessage2CSection序号
+}
+
+// Client连接后发送hotfix
+message HotfixType{
+	optional bytes hotfix = 1;  // hotfix的内容
+	optional bytes sessionId = 2;  // --ServerOnly-- Client连接标识
+}
+
+// Client请求连接Game的应答
+message ConnectServerResp{
+	enum RespType {
+		Busy = 0;	         // 服务端忙
+		Connected = 1;		 // 连接成功
+		ConnectRefused = 2;  // 连接因为某些异常原因被拒绝
+		Reconnected = 3;     // 断线重连成功
+		ReconnectRefused = 4;// 断线重连因为某些异常原因被拒绝，需要重新登录
+		Forbidden = 5;	     // 服务器禁止连接
+		MaxConnections = 6;  // Gate连接数达上限
+	}
+	enum RecoveryMode {
+		FullSync = 0;        // 走全量恢复
+		Resume = 1;          // 跳过全量恢复，使用Client RPC replay恢复增量
+	}
+	required RespType type = 1;    // --All-- 应答的结果
+	optional bytes sessionId = 2;  // --ServerOnly-- Client连接标识
+	optional RecoveryMode recoveryMode = 3; // --ClientOnly-- 断线重连恢复模式
+}
+
+
+// Entity的RPC方法, 只能用于有通信权的两个Entity之间通信
+message EntityMessage {
+	optional bytes entityId = 1;   // --All-- 目标Entity的entityId
+	optional bytes methodName = 2; // --All-- RPC方法名
+	optional int32 index = 3;      // --All-- RPC方法名的Index，从1开始
+	required bytes parameters = 4; // --All-- RPC参数
+	optional bytes sessionId = 5;  // --ServerOnly-- Client连接标识
+	optional int32 callbackId = 6; // --ClientOnly-- 客户端调用时回调包装
+	optional bytes context = 7;    //--ALL -- 此次RPC调用的上下文环境
+}
+
+message EntityMessage2CSection {
+	optional int32 actorId = 1;   // --All-- 目标Entity的actorId
+	required int32 protocol = 2;   // --All-- RPC方法名的协议号
+	required bytes parameters = 3; // --All-- RPC参数
+	optional uint32 seqId = 4;    // --ClientOnly-- Player级S2C RPC replay序号，0保留不用
+}
+
+// Cpp Entity的RPC方法, 只能用于有通信权的两个Entity之间通信
+message EntityMessage2C {
+	optional int32 actorId = 1;   // --All-- 目标Entity的actorId
+	required int32 protocol = 2;   // --All-- RPC方法名的协议号
+	required bytes parameters = 3; // --All-- RPC参数
+	optional bytes sessionId = 4;  // --ServerOnly-- Client连接标识
+	repeated EntityMessage2CSection msgQueue = 5;
+}
+
+// 发往Game上对应的Entity
+message ForwardEntityMessage {
+	required bytes entityMailbox = 1; // --ServerOnly
+	optional bytes methodName = 2; // --ServerOnly
+	required bytes parameters = 3; // --ServerOnly
+	optional bytes context = 4; //--ServerOnly -- 此次RPC调用的上下文环境
+}
+
+enum ChannelMessageType {
+    Data 			= 0;
+    KeepAlive 		= 1;   
+    Close 			= 2;
+	MigrateNotify 	= 3;
+	RecoverNotify 	= 4;
+}
+
+// channel 的可靠消息队列
+message ReliableQueue {
+	message Segment {
+		optional uint32 ts		= 1;
+		optional uint32 sn      = 2;
+		optional uint32 una    	= 3;
+		optional uint32 resendts= 4;
+		optional uint32 rto     = 5;
+		optional uint32 fastack = 6;
+		optional uint32 xmit   	= 7;
+
+		optional bytes context 	= 8;
+		optional bytes message	= 9;
+	}
+
+	repeated Segment snd_queue	= 1;
+	repeated Segment rcv_queue 	= 2;
+	repeated Segment snd_buf  	= 3;
+	repeated Segment rcv_buf  	= 4;
+
+	optional uint32 nsnd_que  	= 5;
+	optional uint32 nsnd_buf  	= 6;
+	optional uint32 nrcv_buf  	= 7;
+	optional uint32 dead_link 	= 8;
+
+	optional uint32 rx_rto 		= 9;
+	optional uint32 resent  	= 10;
+
+	optional uint32 snd_una 	= 11;
+	optional uint32 snd_nxt		= 12;
+	optional uint32 rcv_nxt		= 13;
+	optional uint32 snd_wnd 	= 14;
+	optional uint32 rcv_wnd 	= 15;
+}
+
+// Entity的Channel RPC方法, 只能用于有通信权的两个Entity之间的Channel通信
+message ChannelMessage {
+    required ChannelMessageType type = 1;
+    required int64 channelId = 2;
+    optional bytes message = 3;    // --All--
+    optional bytes sessionId = 4;  // --ServerOnly-- Client连接标识
+    optional bytes context = 5;    // --ServerOnly -- 此次RPC调用的上下文环境
+}
+
+// 发往Game上对应的Entity的Channel消息
+message ForwardChannelMessage {
+    required bytes entityMailbox = 1; // --ServerOnly
+    required ChannelMessageType type = 2;
+    required bytes channelId = 3;
+    optional bytes message = 4; // --ServerOnly
+    optional bytes context = 5; //--ServerOnly -- 此次RPC调用的上下文环境
+}
+
+message ChannelMessageData {
+    enum DataType {
+        Request = 0;
+        Response = 1;
+    }
+    optional bytes methodName = 1;
+    required bytes parameters = 2;
+    required int64 rid = 3;
+    required DataType type = 4;
+}
+
+message ReliableMessageData {
+    enum ReliableType {
+        Data = 0;
+        Ack = 1;
+    }
+    optional bytes data = 1; // 存放ChannelMessageData
+    required int32 una = 2;
+    required int32 sn = 3;
+    required ReliableType type = 4;
+}
+
+message AttachChannelInfo {
+	required bytes srcmb = 1;   // channel发起端的mailbox
+	required bytes dstmb = 2;   // channel被动端的mailbox
+	required bytes name = 3;    // channel的名字标识
+	required bytes channelId = 4; // channel的编号
+}
+
+message AttachChannelResp {
+	enum AttachChannelRespType {
+		DstAttached = 0;      // 成功创建
+		DstNotFound = 1;      // 对端不存在
+		DstTimeout = 2;       // 超时
+	}
+	required AttachChannelRespType type = 1; 
+	required bytes srcmb = 2;
+	required bytes dstid = 3;
+	required bytes channelId = 4;
+}
+
+message MigrateInfo {
+	required bytes dstmb = 1;    // 迁移目的地的mailbox
+	required bytes entityId = 2;
+	required bytes minfo = 3;    // 迁移的信息
+	optional bool lazyload = 4;  // 是否延迟反序列化
+}
+
+// 心跳包
+message Heartbeat {
+	optional int64 time = 1;
+	optional int64 connectionQuota = 2;
+	optional int64 connectionAllocated = 3;
+}
+
+// 属性同步给客户端的消息
+message PropertySyncClientMessage {
+	optional bytes ownerid = 1;    // 属性的ownerid
+	required int64 propertyid = 2; // 属性的id
+	required int32 optype = 3;     // 变化类型
+	required bytes name = 4;       // 变化的子属性名
+	optional bytes value = 5;      // 变化的值
+	optional bytes sessionId = 6;  // Client连接标识
+}
+
+// 基于策略的属性同步，发给客户端的消息
+message PropertyStrategySyncClientMessage {
+	required int32 syncMode = 1;   // 同步策略编号
+	optional bytes ownerid = 2;    // 属性的ownerid
+	required bytes syncdata = 3;   // 同步的数据
+	optional bytes sessionId = 4;  // Client连接标识
+}
+
+// 属性ID同步给客户端的消息
+message PropertyIdSyncClientMessage {
+	optional bytes ownerid = 1;    // 属性的ownerid
+	required int64 propertyid = 2; // 属性的id
+	required bytes name = 3;       // 变化的子属性名
+	required bytes value = 4;      // 更新的property ids
+	optional bytes sessionId = 5;  // Client连接标识
+}
+
+
+message GlobalGate2ClientInfo {
+	required bytes gateId = 1;
+	required bytes sessionId = 2;
+}
+
+// Global Gate向Client发送消息
+message GlobalGate2ClientMessageInfo {
+	required bytes sessionId = 1;    // 客户端连接标识
+	required bytes methodName = 2; // --All-- RPC方法名
+	required bytes parameters = 3; // --All-- RPC参数
+}
+
+// service调用其他Game上的Soul的Channel方法
+message SoulMessage {
+    required bytes sessionId = 1; // --ServerOnly
+    required bytes entityId = 2; // --ServerOnly
+    required bytes bindId = 3;
+	required bytes methodName = 4; // --All-- RPC方法名
+	required bytes parameters = 5; // --All-- RPC参数
+}
+
+message PropertyDeclareType {
+	optional bytes bundleConfig = 1;
+	optional bytes customTypeConfig = 2;
+	optional bytes sessionId = 3; // --ServerOnly-- Client连接标识
+}
+
+// Gate透传的业务payload。targetMethod是最终接收端已有RPC method index。
+message ForwardPayload {
+	required uint32 targetMethod = 2;
+	required bytes payload = 5;  // 最终接收端处理的protobuf bytes，Gate不解析
+}
+
+// Game发给Gate，再由Gate转发给Client。Gate只使用sessionId路由。
+message ForwardClientPayload {
+	required bytes sessionId = 1;
+	required ForwardPayload forward = 2;
+}
+
+// Game发给Gate，再由Gate转发给目标Game。Gate只使用serverName路由。
+message ForwardGamePayload {
+	required string serverName = 1;
+	optional int32 clusterId = 2;
+	required ForwardPayload forward = 3;
+}

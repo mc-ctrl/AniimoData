@@ -1,0 +1,242 @@
+--- BLOCK #0 1-31, warpins: 1 ---
+slot0 = require
+slot2 = "Common.FlowCanvas.Nodes.FlowNode"
+slot0 = slot0(slot2)
+slot1 = require
+slot3 = "Core.Framework.Class"
+slot1 = slot1(slot3)
+slot2 = slot1.LiteClass
+slot4 = "BlackboardSet"
+slot5 = slot0
+slot2 = slot2(slot4, slot5)
+slot3 = {}
+
+slot4 = function(slot0, slot1)
+	--- BLOCK #0 1-1, warpins: 1 ---
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3[1] = slot4
+
+slot4 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot2 = slot0 + slot1
+
+	return slot2
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3[2] = slot4
+
+slot4 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot2 = slot0 - slot1
+
+	return slot2
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3[3] = slot4
+
+slot4 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot2 = slot0 * slot1
+
+	return slot2
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3[4] = slot4
+
+slot4 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot2 = slot0 / slot1
+
+	return slot2
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3[5] = slot4
+
+slot4 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot4 = FlowNode
+	slot4 = slot4.ctor
+	slot6 = slot0
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	slot4 = slot2.variableName
+	slot0.variableName = slot4
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.ctor = slot4
+
+slot4 = function(slot0)
+	--- BLOCK #0 1-19, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.addFlowInput
+	slot4 = "In"
+
+	slot5 = function(slot0, slot1)
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.On_In_PortCalled
+		slot5 = slot0
+		slot6 = slot1
+
+		slot2(slot4, slot5, slot6)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1(slot3, slot4, slot5)
+
+	slot3 = slot0
+	slot1 = slot0.addFlowOutput
+	slot4 = "Out"
+	slot1 = slot1(slot3, slot4)
+	slot0.flowOut_Out = slot1
+	slot3 = slot0
+	slot1 = slot0.addValueInput
+	slot4 = "Value"
+	slot1 = slot1(slot3, slot4)
+	slot0.valueInput_Value = slot1
+	slot1 = slot0.nodeData
+	slot1 = slot1.Operation
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 20-20, warpins: 1 ---
+	slot1 = 1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 21-28, warpins: 2 ---
+	slot0.Operation = slot1
+	slot3 = slot0
+	slot1 = slot0.addValueOutput
+	slot4 = "Value"
+
+	slot5 = function(slot0)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.Get_Value_Value
+		slot4 = slot0
+
+		return slot1(slot3, slot4)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1(slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot2.registerPorts = slot4
+
+slot4 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-25, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getContextValue
+	slot6 = slot1
+	slot7 = slot0.valueInput_Value
+	slot3 = slot3(slot5, slot6, slot7)
+	slot4 = BlackboardOp
+	slot5 = slot0.Operation
+	slot4 = slot4[slot5]
+	slot8 = slot1
+	slot6 = slot1.getBlackboardVariable
+	slot9 = slot0.variableName
+	slot6 = slot6(slot8, slot9)
+	slot7 = slot3
+	slot4 = slot4(slot6, slot7)
+	slot7 = slot1
+	slot5 = slot1.setBlackboardVariable
+	slot8 = slot0.variableName
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
+	slot5 = slot0.flowOut_Out
+	slot7 = slot5
+	slot5 = slot5.call
+	slot8 = slot1
+
+	slot5(slot7, slot8)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.On_In_PortCalled = slot4
+
+slot4 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.getBlackboardVariable
+	slot5 = slot0.variableName
+
+	return slot2(slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.Get_Value_Value = slot4
+
+return slot2
+--- END OF BLOCK #0 ---
+
+
+

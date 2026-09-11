@@ -1,0 +1,622 @@
+--- BLOCK #0 1-416, warpins: 1 ---
+slot0 = {
+	INTERACT_ID_END = 30,
+	INTERACT_HOME_CAR_PET_FINISH_DISPATCH = 450,
+	INTERACT_HOME_HATCHBOX_SUC = 2155,
+	INTERACT_HOME_HATCHBOX_PLACE = 2154,
+	INTERACT_HOME_HATCHBOX_VIEWDETAILS = 2153,
+	INTERACT_HOME_HATCHBOX_SPEEDUP = 2152,
+	INTERACT_HOME_HATCHBOX_FONDLE = 2151,
+	INTERACT_HOME_DISABLE_ELECTRIC_MODE = 446,
+	INTERACT_HOME_ENABLE_ELECTRIC_MODE = 445,
+	INTERACT_HOME_FOOD_ACTION_ID = 458,
+	INTERACT_HOME_LEVEL_UP_ID = 350,
+	INTERACT_HOME_CALL_PET_WORK_ID = 405,
+	INTERACT_HOME_DETAIL_ACTION_ID = 278,
+	INTERACT_HOME_SETTING_ACTION_ID = 272,
+	INTERACT_HOME_DELIVER_ACTION_ID = 270,
+	INTERACT_CANCEL_MULTI_INTERACT_ACTION_ID = 136,
+	INTERACT_DROP_ACTION_ID = 6,
+	DEFAULT_INTERACTION_DIALOGUE_ID = -2,
+	DEFAULT_INTERACTION_CUSTOM_ID = -1,
+	DEFAULT_INTERACTION_PROTOTYPE_ID = 1,
+	INTERACTION_TYPE_ARK_PET_INTERACT = 189,
+	INTERACTION_TYPE_ARK_PLAYER_INTERACT = 188,
+	INTERACTION_TYPE_INTERACT_ANIMATION = 187,
+	INTERACTION_TYPE_ENTER_FLUTE_PORTAL = 186,
+	INTERACTION_TYPE_LEAVE_EGG_MAN_MODE = 185,
+	INTERACTION_TYPE_DISCOVER_PLAYER = 184,
+	INTERACTION_TYPE_FALLEN_AID = 183,
+	INTERACTION_TYPE_VLOG = 182,
+	INTERACTION_TYPE_START_DITTO = 181,
+	INTERACTION_TYPE_FRIEND = 180,
+	INTERACTION_TYPE_HOME_INVENTORY = 164,
+	INTERACTION_TYPE_MARKET = 163,
+	INTERACTION_TYPE_CLEAN_TRASH = 162,
+	INTERACTION_TYPE_MARK_SHARE = 161,
+	INTERACTION_TYPE_ENVOBJ_INTERACT_COMMON = 120,
+	INTERACTION_TYPE_BRANCH_LINE_AREA = 110,
+	INTERACTION_TYPE_QUICK_CAPTURE_NO_EMPTY_SLOT = 109,
+	INTERACTION_TYPE_BOSS_CAPTURE_CANCEL = 108,
+	INTERACTION_TYPE_BOSS_CAPTURE = 107,
+	INTERACTION_TYPE_LEVEL_ITEM_COMMON_INTERACT = 106,
+	INTERACTION_TYPE_QUICK_CAPTURE_ILLEGAL_BALL = 105,
+	INTERACTION_TYPE_QUICK_CAPTURE_NO_BALL = 104,
+	INTERACTION_TYPE_LEVEL_ITEM_MOVE_PLATFORM = 85,
+	INTERACTION_TYPE_LEVEL_ITEM_CREATE_SPAWNER = 84,
+	INTERACTION_TYPE_MULTI_INTERACT_CANCEL = 83,
+	INTERACTION_TYPE_MULTI_INTERACT = 82,
+	INTERACTION_TYPE_RETURN_TEMP_PET = 81,
+	INTERACTION_TYPE_GET_TEMP_PET = 80,
+	INTERACTION_TYPE_QUICK_CAPTURE_NOT_BIND = 79,
+	INTERACTION_TYPE_CALL_FRIENDS = 54,
+	INTERACTION_TYPE_PUPPET_RANDOM_DIALOGUE = 30,
+	INTERACTION_TYPE_MICROPHONE = 29,
+	INTERACTION_TYPE_NPC_SPECIAL_INTERACTION = 28,
+	INTERACTION_TYPE_NPC_INTERACTION_1 = 24,
+	INTERACTION_TYPE_QUEST_COMMIT = 23,
+	INTERACTION_TYPE_SANDBOX_ENT_FUNC = 22,
+	INTERACTION_TYPE_EXIT_VEHICLE = 21,
+	INTERACTION_TYPE_PLANT_SEED = 20,
+	INTERACTION_TYPE_ARK_FUNC = 19,
+	INTERACTION_TYPE_PET_LIFT = 18,
+	INTERACTION_TYPE_NPC_INTERACTION = 17,
+	INTERACTION_TYPE_MIMICRY = 16,
+	INTERACTION_TYPE_THROW = 15,
+	INTERACTION_TYPE_PUSH = 14,
+	INTERACTION_TYPE_LIFT = 13,
+	INTERACTION_TYPE_QUEST_DIALOGUE = 12,
+	INTERACTION_TYPE_SWITCH_ABILITY = 11,
+	INTERACTION_TYPE_NPC_FUNC = 10,
+	INTERACTION_TYPE_PICK_UP = 9,
+	INTERACTION_TYPE_QUICK_CAPTURE = 8,
+	INTERACTION_TYPE_QUICK_PHOTO = 7,
+	INTERACTION_TYPE_DROP = 6,
+	INTERACTION_TYPE_ELEVATOR = 5,
+	INTERACTION_TYPE_SWITCH = 4,
+	INTERACTION_TYPE_ENT_FUNC = 1
+}
+slot1 = {}
+slot2 = slot0.INTERACTION_TYPE_PLANT_SEED
+slot1[1] = slot2
+slot2 = slot0.INTERACTION_TYPE_DROP
+slot1[2] = slot2
+slot2 = slot0.INTERACTION_TYPE_RETURN_TEMP_PET
+slot1[3] = slot2
+slot2 = slot0.INTERACTION_TYPE_QUICK_PHOTO
+slot1[4] = slot2
+slot2 = slot0.INTERACTION_TYPE_QUICK_CAPTURE
+slot1[5] = slot2
+slot2 = slot0.INTERACTION_TYPE_CALL_FRIENDS
+slot1[6] = slot2
+slot2 = slot0.INTERACTION_TYPE_EXIT_VEHICLE
+slot1[7] = slot2
+slot2 = slot0.INTERACTION_TYPE_GET_TEMP_PET
+slot1[8] = slot2
+slot2 = slot0.INTERACTION_TYPE_LEVEL_ITEM_COMMON_INTERACT
+slot1[9] = slot2
+slot2 = slot0.INTERACTION_TYPE_MULTI_INTERACT
+slot1[10] = slot2
+slot2 = slot0.INTERACTION_TYPE_MULTI_INTERACT_CANCEL
+slot1[11] = slot2
+slot2 = slot0.INTERACTION_TYPE_LEVEL_ITEM_CREATE_SPAWNER
+slot1[12] = slot2
+slot2 = slot0.INTERACTION_TYPE_LEVEL_ITEM_MOVE_PLATFORM
+slot1[13] = slot2
+slot2 = slot0.INTERACTION_TYPE_BRANCH_LINE_AREA
+slot1[14] = slot2
+slot2 = slot0.INTERACTION_TYPE_HOME_INVENTORY
+slot1[15] = slot2
+slot2 = slot0.INTERACT_HOME_LEVEL_UP_ID
+slot1[16] = slot2
+slot0.NO_TARGET_POS_LIST = slot1
+slot1 = {}
+slot2 = slot0.INTERACTION_TYPE_QUEST_COMMIT
+slot1[1] = slot2
+slot2 = slot0.INTERACTION_TYPE_VLOG
+slot1[2] = slot2
+slot2 = slot0.INTERACTION_TYPE_QUEST_DIALOGUE
+slot1[3] = slot2
+slot2 = slot0.INTERACTION_TYPE_SWITCH_ABILITY
+slot1[4] = slot2
+slot2 = slot0.INTERACTION_TYPE_NPC_FUNC
+slot1[5] = slot2
+slot2 = slot0.INTERACTION_TYPE_ARK_FUNC
+slot1[6] = slot2
+slot2 = slot0.INTERACTION_TYPE_NPC_SPECIAL_INTERACTION
+slot1[7] = slot2
+slot2 = slot0.INTERACTION_TYPE_PICK_UP
+slot1[8] = slot2
+slot2 = slot0.INTERACTION_TYPE_LIFT
+slot1[9] = slot2
+slot2 = slot0.INTERACTION_TYPE_PET_LIFT
+slot1[10] = slot2
+slot2 = slot0.INTERACTION_TYPE_PUSH
+slot1[11] = slot2
+slot2 = slot0.INTERACTION_TYPE_THROW
+slot1[12] = slot2
+slot2 = slot0.INTERACTION_TYPE_SWITCH
+slot1[13] = slot2
+slot2 = slot0.INTERACTION_TYPE_ENT_FUNC
+slot1[14] = slot2
+slot2 = slot0.INTERACTION_TYPE_ENVOBJ_INTERACT_COMMON
+slot1[15] = slot2
+slot2 = slot0.INTERACTION_TYPE_ELEVATOR
+slot1[16] = slot2
+slot2 = slot0.INTERACTION_TYPE_MIMICRY
+slot1[17] = slot2
+slot2 = slot0.INTERACTION_TYPE_NPC_INTERACTION
+slot1[18] = slot2
+slot2 = slot0.INTERACTION_TYPE_NPC_INTERACTION_1
+slot1[19] = slot2
+slot2 = slot0.INTERACTION_TYPE_SANDBOX_ENT_FUNC
+slot1[20] = slot2
+slot2 = slot0.INTERACTION_TYPE_MARK_SHARE
+slot1[21] = slot2
+slot2 = slot0.INTERACTION_TYPE_CLEAN_TRASH
+slot1[22] = slot2
+slot2 = slot0.INTERACTION_TYPE_MICROPHONE
+slot1[23] = slot2
+slot2 = slot0.INTERACTION_TYPE_PUPPET_RANDOM_DIALOGUE
+slot1[24] = slot2
+slot2 = slot0.INTERACTION_TYPE_BOSS_CAPTURE
+slot1[25] = slot2
+slot2 = slot0.INTERACTION_TYPE_BOSS_CAPTURE_CANCEL
+slot1[26] = slot2
+slot2 = slot0.INTERACTION_TYPE_INTERACT_ANIMATION
+slot1[27] = slot2
+slot2 = slot0.INTERACTION_TYPE_ARK_PLAYER_INTERACT
+slot1[28] = slot2
+slot2 = slot0.INTERACTION_TYPE_ARK_PET_INTERACT
+slot1[29] = slot2
+slot2 = slot0.INTERACTION_TYPE_FRIEND
+slot1[30] = slot2
+slot2 = slot0.INTERACTION_TYPE_MARKET
+slot1[31] = slot2
+slot2 = slot0.INTERACTION_TYPE_START_DITTO
+slot1[32] = slot2
+slot2 = slot0.INTERACTION_TYPE_FALLEN_AID
+slot1[33] = slot2
+slot2 = slot0.INTERACTION_TYPE_DISCOVER_PLAYER
+slot1[34] = slot2
+slot2 = slot0.INTERACTION_TYPE_ENTER_FLUTE_PORTAL
+slot1[35] = slot2
+slot2 = slot0.INTERACTION_TYPE_LEAVE_EGG_MAN_MODE
+slot1[36] = slot2
+slot0.INTERACTION_PRIORITY_LIST = slot1
+slot1 = {}
+slot2 = slot0.INTERACTION_TYPE_ENT_FUNC
+slot3 = {
+	className = "InteractionUnitEntFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_ENVOBJ_INTERACT_COMMON
+slot3 = {
+	className = "InteractionUnitEntFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_PICK_UP
+slot3 = {
+	className = "InteractionUnitEntFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_SWITCH
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_ELEVATOR
+slot3 = {
+	className = "InteractionUnitElevator"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_DROP
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_QUICK_PHOTO
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_QUICK_CAPTURE
+slot3 = {
+	className = "InteractionQuickCatch"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_NPC_FUNC
+slot3 = {
+	className = "InteractionUnitNpcFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_ARK_FUNC
+slot3 = {
+	className = "InteractionUnitArkFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_SWITCH_ABILITY
+slot3 = {
+	className = "InteractionSwitchAbility"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_QUEST_DIALOGUE
+slot3 = {
+	className = "InteractionUnitQuestDialogue"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_LIFT
+slot3 = {
+	className = "InteractionUnitEntFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_PET_LIFT
+slot3 = {
+	className = "InteractionUnitEntFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_PUSH
+slot3 = {
+	className = "InteractionUnitEntFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_THROW
+slot3 = {
+	className = "InteractionUnitEntFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_MIMICRY
+slot3 = {
+	className = "InteractionUnitMimicry"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_NPC_INTERACTION
+slot3 = {
+	className = "InteractionUnitEntFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_NPC_INTERACTION_1
+slot3 = {
+	className = "InteractionUnitEntFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_CALL_FRIENDS
+slot3 = {
+	className = "InteractionCallFriends"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_PLANT_SEED
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_GET_TEMP_PET
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_RETURN_TEMP_PET
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_EXIT_VEHICLE
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_SANDBOX_ENT_FUNC
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_LEVEL_ITEM_COMMON_INTERACT
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_MULTI_INTERACT
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_LEVEL_ITEM_CREATE_SPAWNER
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_LEVEL_ITEM_MOVE_PLATFORM
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_MULTI_INTERACT_CANCEL
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_QUEST_COMMIT
+slot3 = {
+	className = "InteractionUnitQuestCommit"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_MARK_SHARE
+slot3 = {
+	className = "InteractionUnitMarkShare"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_CLEAN_TRASH
+slot3 = {
+	className = "InteractionUnitEntFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_NPC_SPECIAL_INTERACTION
+slot3 = {
+	className = "InteractionUnitNpcSpecialInteract"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_MICROPHONE
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_PUPPET_RANDOM_DIALOGUE
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_BOSS_CAPTURE
+slot3 = {
+	className = "InteractionUnitBossCatch"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_BOSS_CAPTURE_CANCEL
+slot3 = {
+	className = "InteractionUnitBossCatchCancel"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_BRANCH_LINE_AREA
+slot3 = {
+	className = "InteractionAreaBranchLine"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_FRIEND
+slot3 = {
+	className = "InteractionUnitPlayerFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_MARKET
+slot3 = {
+	className = "InteractionUnitEntFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_HOME_INVENTORY
+slot3 = {
+	className = "InteractionUnitEntFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACT_HOME_LEVEL_UP_ID
+slot3 = {
+	className = "InteractionUnitEntFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_START_DITTO
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_VLOG
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_FALLEN_AID
+slot3 = {
+	className = "InteractionUnitFallenAidFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_DISCOVER_PLAYER
+slot3 = {
+	className = "InteractionUnitDiscoverPlayerFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_ENTER_FLUTE_PORTAL
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_LEAVE_EGG_MAN_MODE
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_INTERACT_ANIMATION
+slot3 = {
+	className = "InteractionUnitPlayerFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_ARK_PLAYER_INTERACT
+slot3 = {
+	className = "InteractionUnitPlayerFunc"
+}
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_ARK_PET_INTERACT
+slot3 = {
+	className = "InteractionUnitOnlyFunc"
+}
+slot1[slot2] = slot3
+slot0.INTERACTION_CONFIG = slot1
+slot1 = 0
+slot0.LEVEL_00 = slot1
+slot1 = 1
+slot0.LEVEL_01 = slot1
+slot1 = 2
+slot0.LEVEL_02 = slot1
+slot1 = 3
+slot0.LEVEL_03 = slot1
+slot1 = 4
+slot0.LEVEL_04 = slot1
+slot1 = 5
+slot0.LEVEL_05 = slot1
+slot1 = {}
+slot2 = slot0.INTERACTION_TYPE_ENT_FUNC
+slot3 = slot0.LEVEL_00
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_SWITCH
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_ELEVATOR
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_DROP
+slot3 = slot0.LEVEL_02
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_PICK_UP
+slot3 = slot0.LEVEL_03
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_NPC_FUNC
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_SWITCH_ABILITY
+slot3 = slot0.LEVEL_04
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_QUEST_DIALOGUE
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_LIFT
+slot3 = slot0.LEVEL_02
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_PUSH
+slot3 = slot0.LEVEL_02
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_THROW
+slot3 = slot0.LEVEL_02
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_MIMICRY
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_NPC_INTERACTION
+slot3 = slot0.LEVEL_00
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_PET_LIFT
+slot3 = slot0.LEVEL_02
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_ARK_FUNC
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_PLANT_SEED
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_EXIT_VEHICLE
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_SANDBOX_ENT_FUNC
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_QUEST_COMMIT
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_NPC_INTERACTION_1
+slot3 = slot0.LEVEL_00
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_NPC_SPECIAL_INTERACTION
+slot3 = slot0.LEVEL_04
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_MICROPHONE
+slot3 = slot0.LEVEL_04
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_PUPPET_RANDOM_DIALOGUE
+slot3 = slot0.LEVEL_04
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_CALL_FRIENDS
+slot3 = slot0.LEVEL_04
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_GET_TEMP_PET
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_RETURN_TEMP_PET
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_MULTI_INTERACT
+slot3 = slot0.LEVEL_02
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_MULTI_INTERACT_CANCEL
+slot3 = slot0.LEVEL_02
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_LEVEL_ITEM_CREATE_SPAWNER
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_LEVEL_ITEM_MOVE_PLATFORM
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_LEVEL_ITEM_COMMON_INTERACT
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_BRANCH_LINE_AREA
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_ENVOBJ_INTERACT_COMMON
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_MARK_SHARE
+slot3 = slot0.LEVEL_02
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_CLEAN_TRASH
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_MARKET
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_HOME_INVENTORY
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_FRIEND
+slot3 = slot0.LEVEL_05
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_INTERACT_ANIMATION
+slot3 = slot0.LEVEL_05
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_ARK_PLAYER_INTERACT
+slot3 = slot0.LEVEL_05
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_ARK_PET_INTERACT
+slot3 = slot0.LEVEL_05
+slot1[slot2] = slot3
+slot2 = slot0.INTERACTION_TYPE_START_DITTO
+slot3 = slot0.LEVEL_01
+slot1[slot2] = slot3
+slot0.INTERACTION_PRIORITY_TABLE = slot1
+slot1 = {
+	PHOTO = 3,
+	ARK_COCKTAIL_INTERACT = 473,
+	ARK_PET_UP_INTERACT = 472,
+	ENTER_FLUTE_PORTAL = 409,
+	FALLEN_AID = 388,
+	CARRY_SEGG = 375,
+	VLOG_INTERACT = 1030,
+	FRIEND_INTERACT = 263,
+	PHOTO_IDENTIFY = 122,
+	QUICK_CAPTURE = 7
+}
+slot0.STYLE_CONST = slot1
+slot1 = {
+	[0] = "Hud/F",
+	"Hud/Space"
+}
+slot0.KeyBinding = slot1
+slot1 = {
+	HomePet = 1,
+	Default = 0,
+	StaticNpc = 2
+}
+slot0.EntInteractPriority = slot1
+slot1 = {
+	[1009.0] = true
+}
+slot0.ChestInteractShowSpecialItemId = slot1
+
+return slot0
+--- END OF BLOCK #0 ---
+
+
+

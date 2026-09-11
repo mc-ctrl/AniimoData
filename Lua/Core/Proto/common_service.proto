@@ -1,0 +1,89 @@
+syntax = "proto2";
+
+package phonest.proto;
+
+option cc_generic_services = false;
+
+message MsMetadata {
+    optional string service = 1;
+    optional string hint = 2;
+    optional string callback = 3;
+}
+
+message MsRequest {
+    optional uint64 rid       = 1;
+    required string service   = 2;
+    required string method    = 3;
+    optional bytes params     = 4;
+    optional string callerId  = 5;
+    optional bytes context    = 7;
+    optional bytes options    = 8; // options such as hint\labels\serviceId
+    optional MsMetadata metadata = 9;
+    optional int32 gate_retried = 10; // 网关重试次数(对于无回调的请求，记录在请求上)
+}
+
+message MsResponse {
+    optional uint64 rid         = 1;
+    required bytes params       = 2;
+    optional bytes context      = 3;
+    optional string service_id  = 4;  // ID on which service handled
+    optional MsMetadata metadata = 5;
+}
+
+message MsPush {
+    optional string org_type  = 1[default="ENTITY"];  // organization type: ENTITY, CLUSTER,  WORLD
+    repeated string ep_ids    = 2;  // Endpoint ids
+    optional string msg_uuid  = 3;  // 消息编号，如果消息编号不为空，接收方必须返回Ack
+    required string service   = 4;  // 服务名称
+    required string method    = 5;  // 方法名称
+    optional bytes params     = 6;  // 参数
+    optional string server_id = 7;  // 目标服务器编号
+    optional bool to_client   = 8;  // 是否推送给客户端
+}
+
+message MsRegistration {
+    required string process_id      = 1;    // 进程编号
+    required string process_type    = 2;    // 进程类型
+    required string process_name    = 3;    // 服务器名
+    required string route_strategy  = 4;    // 路由规则
+    optional bytes metadata         = 5;    // 扩展参数
+}
+
+message MsRegistrationAck {
+    optional string address         = 1;    // 注册地址
+    optional bytes metadata         = 2;    // 扩展参数
+}
+
+message MsDeregistration {
+    optional string reason = 1;
+    optional bytes metadata= 2;
+    optional string process_name = 3;   // 本地测试game多开service的情况
+}
+
+message MsDeregistrationAck {
+    optional string address         = 1;    // 注册地址
+    optional bytes metadata         = 2;
+}
+
+message StatefulMsg {
+	optional string from		= 1;	// 源头唯一名字，可以是shard，router，config
+	optional string to			= 2;	// 目标唯一名字，可以是shard，router，config
+	optional string service		= 3;	// 有状态服务类型
+	optional bytes params		= 4;	// seech.MessageProto
+	optional bytes context		= 5;	// 预留字段
+}
+
+// 协议号定义
+message EnumMicroProtocol {
+    enum Type {
+        MicroRequest    = 33;
+        MicroResponse   = 34;
+        MicroPush       = 35;
+        MicroRegister   = 36;
+        MicroDeregister = 37; // 优雅停服，通知网关
+        // MicroStreamMsg  = 38; 
+        MicroStatefulMsg= 39;
+        MicroRegisterAck= 40;
+        MicroDeregisterAck= 41;
+    }
+}

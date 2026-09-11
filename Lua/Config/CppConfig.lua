@@ -1,0 +1,16 @@
+--- BLOCK #0 1-2, warpins: 1 ---
+slot0 = {
+	RVO_AGENT_MAX_SPEED = 1,
+	RVO_AGENT_RADIUS = 0.5,
+	RVO_TIME_HORIZON_OBSTACLE = 5,
+	RVO_TIME_STEP = 1,
+	OPEN_RPC_CALL_DEBUG = false,
+	RVO_SIMULATE_TICK_COUNT = 2,
+	RVO_RTREE_BOUNDARY_RESERVE = 2
+}
+
+return slot0
+--- END OF BLOCK #0 ---
+
+
+

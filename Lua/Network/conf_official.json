@@ -1,0 +1,9 @@
+{
+    "enableEncrypt": true,
+    "pubKeyData": "-----BEGIN RSA PUBLIC KEY-----\nMIIBCgKCAQEAr/9IP4Dh69zOplFeq9wFCkXPXM/YlOhT+TuBGk1s8GnLmkSPtKvH\ngjXwlVBQir7JUT3nIQOSZWVHsL8IrzM5JPWt+OQ4PG6yjqDkngHp8cvgw/BNa0F0\n9KI4mit5459kfYXhwrcpliWCKXImET1qIijCQGKgRr8VWK7yez3eF2GEXk2n2ylm\nG27yK2TNlkTjDbkvjeuPzYoWh14gp1GeCJ1L7FDwapXinE/I5UfWnZCqlwXwXd6c\nMcKEk1b9M2+8tS6c4Y/n+8Tq7iBzPlzmS5oQmoUlwfEzT6SSlyQsrkradpHLHZ0q\nVoj6d/oHBZD3Uj9sRTycy72WeW4tTWuqDQIDAQAB\n-----END RSA PUBLIC KEY-----",
+    "enableMsEncrypt": true,
+    "msPubKeyData": "-----BEGIN RSA PUBLIC KEY-----\nMIIBCgKCAQEAr/9IP4Dh69zOplFeq9wFCkXPXM/YlOhT+TuBGk1s8GnLmkSPtKvH\ngjXwlVBQir7JUT3nIQOSZWVHsL8IrzM5JPWt+OQ4PG6yjqDkngHp8cvgw/BNa0F0\n9KI4mit5459kfYXhwrcpliWCKXImET1qIijCQGKgRr8VWK7yez3eF2GEXk2n2ylm\nG27yK2TNlkTjDbkvjeuPzYoWh14gp1GeCJ1L7FDwapXinE/I5UfWnZCqlwXwXd6c\nMcKEk1b9M2+8tS6c4Y/n+8Tq7iBzPlzmS5oQmoUlwfEzT6SSlyQsrkradpHLHZ0q\nVoj6d/oHBZD3Uj9sRTycy72WeW4tTWuqDQIDAQAB\n-----END RSA PUBLIC KEY-----",
+    "enableOnlineServerList": true,
+    "serverGroupData": {
+    }
+}

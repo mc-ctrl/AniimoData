@@ -1,0 +1,241 @@
+--- BLOCK #0 1-29, warpins: 1 ---
+slot0 = require
+slot2 = "Common.AI.ConditionTrigger.CTHelper"
+slot0 = slot0(slot2)
+slot1 = require
+slot3 = "Common.AICt.CTRConst"
+slot1 = slot1(slot3)
+slot2 = {}
+slot3 = slot0.SafeCall
+slot4 = {
+	"IdleMsgTrigger"
+}
+
+slot5 = function()
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot0 = _eventTriggerList
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.getEventTriggerList = slot5
+slot5 = {}
+
+slot6 = function()
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot0 = _messageTriggerList
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.getMessageTriggerList = slot6
+slot6 = -1
+
+slot7 = function()
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot0 = _tickLodTriggerLevel
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.getTickLodTriggerLevel = slot7
+
+slot7 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 == "IdleMsgTrigger" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-6, warpins: 1 ---
+	slot2 = _M
+	slot2 = slot2._to_2_0
+	slot4 = slot0
+
+	return slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot2.executeEventTrigger = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _M
+	slot1 = slot1._get_4_1
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 7-17, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.setActive
+
+	slot2(slot4)
+
+	slot2 = _M
+	slot2 = slot2._get_1_1
+	slot4 = slot0
+	slot2 = slot2(slot4)
+	slot3 = ipairs
+	slot5 = slot2
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 18-28, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.getMessageContext
+	slot8 = slot8(slot10)
+	slot9 = slot0.__actorId
+	slot8.sourceActorId = slot9
+	slot11 = slot0
+	slot9 = slot0.sendMessage
+	slot12 = slot7
+	slot13 = "Msg_Leader2Partners"
+	slot14 = slot8
+
+	slot9(slot11, slot12, slot13, slot14)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 29-30, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 31-33, warpins: 1 ---
+	slot3 = true
+
+	return slot3
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 34-36, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.setActiveFail
+
+	slot2(slot4)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 37-37, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot2._to_2_0 = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _C
+	slot3 = 1
+	slot4 = "GetPartnerIds"
+	slot5 = slot0
+	slot6 = 0
+
+	return slot1(slot3, slot4, slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2._get_1_1 = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = _M
+	slot1 = slot1._get_1_1
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	slot2 = _C
+	slot4 = 3
+	slot5 = "IsTableEmpty"
+	slot6 = slot0
+	slot7 = slot1
+
+	return slot2(slot4, slot5, slot6, slot7)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2._get_3_1 = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = _M
+	slot1 = slot1._get_3_1
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	slot2 = _C
+	slot4 = 4
+	slot5 = "Not"
+	slot6 = slot0
+	slot7 = slot1
+
+	return slot2(slot4, slot5, slot6, slot7)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2._get_4_1 = slot7
+
+return slot2
+--- END OF BLOCK #0 ---
+
+
+

@@ -1,0 +1,74 @@
+syntax = "proto2";
+
+import "common.proto";
+import "common_service.proto";
+
+package phonest.proto;
+
+option cc_generic_services = false;
+
+// 出于优化Gate转发效率的考量，某些Message会拼凑多个字段，对通信的其中一方来说，可能存在不必要的字段
+// 我们约定，当出现这种拼凑字段的Message时，会在注释中用以下方法说明字段的使用范围：
+// All ：通信两端都会使用
+// ClientOnly ：客户端会使用
+// ServerOnly ：服务器会使用
+
+
+message EncryptToken {
+	required int64 token = 1; 	// 用于加密过程的token，不同的connection生成不同的token,避免重放攻击
+	optional int32 compressLevel = 2;
+	optional string compressType = 3;
+}
+
+message EncryptKey {
+	required bytes headPadding = 1; //随机长度的padding，用于防止黑客在网络流中通过长度轻易追查到key的位置
+	required bytes key = 2;     // 加密的会话密钥串
+	required int64 token = 3;	// 用于加密过程的token，不同的connection生成不同的token,避免重放攻击
+	required bytes tailPadding = 4; //随机长度的padding，可以让每个链接的网络流的rpc起始位置不同
+}
+
+message EncryptKeyString {
+	required bytes keyString = 1;  //EncryptKey message加密后的字节流
+}
+
+// Client2Gate
+service IClientGateService {
+	rpc requestEncryptToken(Void) returns (Void);       // 向Gate获取用于加密过程的token
+	rpc confirmEncryptKey(EncryptKeyString) returns (Void);   // 向Gate确认用于加密的密钥字符串
+	rpc connectServer(ConnectServerReq) returns (Void); // Client请求连接Game,不包括账户验证
+	rpc entityMessage(EntityMessage) returns (Void);    // Client调用Game端具有通信权的Entity的RPC方法
+	rpc channelMessage(ChannelMessage) returns (Void);  // Client调用Game端具有通信权的Entity的Channel RPC方法
+	rpc heartbeat(Heartbeat) returns (Void);            // Client定期向Gate发送的心跳包
+	rpc entityMessage2C(EntityMessage2C) returns (Void);  // Client调用Game端具有通信权的Cpp Entity的RPC方法
+	rpc MicroServiceRequest(MsRequest) returns (Void); // 微服务请求
+}
+
+// Gate2Client
+service IGateClientService {
+	rpc sendHotfix(HotfixType) returns (Void);         // 向Client发送Hotfix
+	rpc connectResponse(ConnectServerResp) returns (Void);       // Client请求连接Game的应答
+	rpc entityMessage(EntityMessage) returns (Void);             // Game调用Client端具有通信权的Entity的RPC方法
+	rpc ecsMessage(EntityMessage) returns (Void);                // Game调用Client端具有通信权的Ecs的RPC方法
+	rpc channelMessage(ChannelMessage) returns (Void);           // Client调用Game端具有通信权的Entity的Channel RPC方法
+	rpc createChannelEntity(ChannelEntityInfo) returns (Void);   // 通知Client创建ChannelEntity,ChannelEntity指拥有通信权的Entity，如Account、Avatar等
+	rpc disconnectClient(Void) returns (Void);                   // 断开客户端的连接，告知客户端不要重连
+	rpc bindAccount(BindAccountInfo) returns (Void);             // 通知客户端绑定Account
+	rpc bindAvatar(BindAvatarInfo) returns (Void);               // 通知客户端绑定Avatar
+	rpc bindSoul(BindSoulInfo) returns (Void);                   // 通知客户端绑定Soul
+	rpc unbindSoul(UnbindSoulInfo) returns (Void);               // 通知客户端与Soul解绑	
+	rpc responseEncryptToken(EncryptToken) returns (Void);       // 通知Client用于加密过程的token
+	rpc confirmEncryptKeyAck(Void) returns (Void);               // 通知Client加密字符串已经确认成功
+	rpc recvHeartbeat(Heartbeat) returns (Void);            	 // Gate回复Client的心跳包
+	rpc entityMessage2C(EntityMessage2C) returns (Void);         // Game调用Client端具有通信权的Cpp Entity的RPC方法
+	rpc propertySync2Client(PropertySyncClientMessage) returns (Void); // 同步属性变化到客户端
+	rpc propertyStrategySync2Client(PropertyStrategySyncClientMessage) returns (Void); // 基于策略的属性同步发送变化到客户端
+	rpc recoverChannelEntity(RecoverChannelEntityInfo) returns (Void); // 通知Client恢复ChannelEntity
+	rpc createClientEntity(ClientEntityInfo) returns (Void);    // 通知Client创建ClientEntity,ClientEntity指普通的没有通信权的Entity，如Monster等
+	rpc propertyIdSync2Client(PropertyIdSyncClientMessage) returns (Void); // 同步属性ID到客户端
+	rpc regGlobalGate2Client(GlobalGate2ClientInfo) returns(Void);     // Global Gate向Client注册
+	rpc globalGate2ClientMessage(GlobalGate2ClientMessageInfo) returns(Void); // Global Gate向Client发送消息
+	rpc MicroServiceResponse(MsResponse) returns (Void);		// 微服务返回
+	rpc MicroServicePush(MsPush) returns (Void);				// 微服务推送
+	rpc sendPropertyDeclare(PropertyDeclareType) returns(Void); // 向Client发送属性声明
+	rpc forwardPayload(ForwardPayload) returns(Void);           // 新转发协议：Gate透传payload，Client按targetMethod分发
+}
